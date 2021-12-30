@@ -1,6 +1,8 @@
 # GrasPiB
 GPIB interface board for Raspberry Pi, designed to work with [linux-gpib](https://linux-gpib.sourceforge.io/) gpio bitbang driver. Extra features include: RS232 serial interface, voltage regualtor, fan mount and I2C conector.
 
+![GrasPiB](Images/IMG_20211229_181813.jpg)
+
 ## Features
 * Active GPIB interface circuit using SN7516x bus driver ICs
 * RS232 serial interface (MAX3232 level converter), with optionaly configurable RTS and CTS lines
