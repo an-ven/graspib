@@ -9,6 +9,24 @@ GPIB interface board for Raspberry Pi, designed to work with [linux-gpib](https:
 * I2C break out connector with one extra GPIO line (5pin JST-PH connector)
 * Stacks on top of a Raspberry Pi
 
+## Configuration options
+
+**JP7 Power supply selection:**
+
+* Close pins 1-2: Power from J5 screw terminal trough onboard regulator circuit (7-35VDC input)
+* Close pins 2-3: Power from J5 screw terminal bypassing onboard regulator circuit (5VDC input only !!)
+* Leave Open: Power from Raspberry Pi power input USB connector, GrasPiB regulator circuit is isolated
+
+**JP6 Output Voltage select on I2C breakout connector**
+
+* Close pins 1-2: 3,3V on J4 pin 1
+* Close pins 2-3: 5V on J4 pin 1
+
+**Enabling RS232 CTS and RTS lines:**
+
+* Close jumpers JP1, JP2, JP4 and JP5, open JP3 positions 1-2 and close positions 2-3
+* This change also needs the GPIB DIO3 signal to be reasigned from GPIO16 to GPIO21 (linux-gpib driver code modifications needed)
+
 ## Linux-gpib setup instructions
 
 (following instructions were tested on a fresh Raspberry Pi OS Lite image)
@@ -57,7 +75,6 @@ Basically just repeat above `make` and `make install` steps when kernel gets upg
 6. Enable non root users to use GPIB interface without sudo
     - Add new `gpib` system group: `$ sudo groupadd -r gpib`
     - Append your_user_name to `gpib` suplementary group: `$ sudo usermod -a -G gpib your_user_name`
-    - Get device info for /dev/gpib0: `$ sudo udevadm info -a -n /dev/gpib0`
     - Create `/etc/udev/rules.d/99-gpib.rules` file and add line: `SUBSYSTEM=="gpib_common", GROUP="gpib", MODE="0660"`
     - Reboot system to apply changes (udevadm utility can also be used, but reboot is dead simple to remember)
     - Test by running `ibtest` without sudo
