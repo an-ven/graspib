@@ -1,0 +1,32 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Conn_GPIB
+D GPIB (IEEE 488) Amphenol Micro Ribbon connector
+K GPIB IEEE 488 connector centronics
+$ENDCMP
+#
+$CMP SN75160BDW
+D Octal General Purpose Interface Bus Transciever
+K GBIB transciever bus driver
+F https://www.ti.com/lit/ds/symlink/sn75160b.pdf
+$ENDCMP
+#
+$CMP SN75160BN
+D Octal General Purpose Interface Bus Transciever
+K GBIB transciever bus driver
+F https://www.ti.com/lit/ds/symlink/sn75160b.pdf
+$ENDCMP
+#
+$CMP SN75161BDW
+D Octal General Purpose Interface Bus Transciever
+K GPIB bus driver transciever
+F https://www.ti.com/lit/ds/symlink/sn75161b.pdf
+$ENDCMP
+#
+$CMP SN75161BN
+D Octal General Purpose Interface Bus Transciever
+K GPIB bus driver transciever
+F https://www.ti.com/lit/ds/symlink/sn75161b.pdf
+$ENDCMP
+#
+#End Doc Library

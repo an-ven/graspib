@@ -5,7 +5,7 @@ GPIB interface board for Raspberry Pi, designed to work with [linux-gpib](https:
 * Active GPIB interface circuit using SN7516x bus driver ICs
 * RS232 serial interface (MAX3232 level converter), with optionaly configurable RTS and CTS lines
 * Step down voltage regulator (LM2576) for use with higher voltage power supplies (7-35VDC)
-* 25mm cooling fan mounting holes and 2pin JST-PH connector for power 
+* 25mm cooling fan mounting holes and 2pin JST-PH connector for power
 * I2C break out connector with one extra GPIO line (5pin JST-PH connector)
 * Stacks on top of a Raspberry Pi
 
