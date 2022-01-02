@@ -68,7 +68,7 @@ Basically just repeat above `make` and `make install` steps when kernel gets upg
 
 5. Configure GPIB interface
     * Open gpib.conf configuration file `$ sudo nano /usr/local/etc/gpib.conf` (default location)
-    * Set `board_type = "gpib_bitbang"` and other relevant settings (for details refer to included `gpib.conf` file, [linux-gpib documentetion](https://linux-gpib.sourceforge.io/doc_html/configuration-gpib-conf.html) and included template file `linux-gpib-src-dir/linux-gpib-user/util/template/gpib.conf`)
+    * Set `board_type = "gpib_bitbang"` and other relevant settings (for details refer to included [`gpib.conf`](extra/gpib.conf) file, [linux-gpib documentetion](https://linux-gpib.sourceforge.io/doc_html/configuration-gpib-conf.html) and included template file `linux-gpib-src-dir/linux-gpib-user/util/template/gpib.conf`)
     * Run gpib_config so the driver reads the configuration file `$ sudo gpib_config --minor 0`
     * Make the last command execute on every startup using crontab entry:
         - Edit crontab for root user: `$ sudo crontab -e`
