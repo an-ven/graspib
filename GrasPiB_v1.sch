@@ -5,13 +5,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "GrasPiB - Ver. 1"
-Date "2021-11-19"
-Rev "2"
+Date "2022-01-13"
+Rev "3"
 Comp "Andraž Vene"
-Comment1 "Raspberry Pi GPIB, RS232 and Power supply HAT"
+Comment1 "https://github.com/an-ven/graspib"
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Raspberry Pi GPIB, RS232 and Power supply HAT"
 $EndDescr
 $Comp
 L RaspberryPi:RPi_GPIO U1
@@ -25,7 +25,7 @@ F 3 "" H 2650 2850 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR06
+L GrasPiB_v1-rescue:+5V-power #PWR06
 U 1 1 6122C198
 P 3400 2000
 F 0 "#PWR06" H 3400 1850 50  0001 C CNN
@@ -45,7 +45,7 @@ Connection ~ 3400 2100
 Wire Wire Line
 	3400 2100 3400 2000
 $Comp
-L power:+3.3V #PWR02
+L GrasPiB_v1-rescue:+3.3V-power #PWR02
 U 1 1 6124403D
 P 1700 2000
 F 0 "#PWR02" H 1700 1850 50  0001 C CNN
@@ -60,7 +60,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 2100 1800 2100
 $Comp
-L power:GND #PWR07
+L GrasPiB_v1-rescue:GND-power #PWR07
 U 1 1 612509BF
 P 3400 4100
 F 0 "#PWR07" H 3400 3850 50  0001 C CNN
@@ -95,7 +95,7 @@ Wire Wire Line
 	3400 2300 3300 2300
 Connection ~ 3400 2700
 $Comp
-L power:GND #PWR03
+L GrasPiB_v1-rescue:GND-power #PWR03
 U 1 1 612911B1
 P 1700 4100
 F 0 "#PWR03" H 1700 3850 50  0001 C CNN
@@ -194,7 +194,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 3900 3500 3900
 $Comp
-L Connector:DB9_Male_MountingHoles J1
+L GrasPiB_v1-rescue:DB9_Male_MountingHoles-Connector J1
 U 1 1 618C80C4
 P 4300 6550
 F 0 "J1" H 4250 7250 50  0000 L CNN
@@ -205,7 +205,7 @@ F 3 " ~" H 4300 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L GrasPiB_v1-rescue:C_Small-Device C3
 U 1 1 61D058C4
 P 2900 5550
 F 0 "C3" V 2671 5550 50  0000 C CNN
@@ -216,7 +216,7 @@ F 3 "~" H 2900 5550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C1
+L GrasPiB_v1-rescue:C_Small-Device C1
 U 1 1 61D06278
 P 900 5550
 F 0 "C1" V 671 5550 50  0000 C CNN
@@ -227,7 +227,7 @@ F 3 "~" H 900 5550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C2
+L GrasPiB_v1-rescue:C_Small-Device C2
 U 1 1 61D07F12
 P 2300 4850
 F 0 "C2" V 2071 4850 50  0000 C CNN
@@ -238,7 +238,7 @@ F 3 "~" H 2300 4850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR08
+L GrasPiB_v1-rescue:GND-power #PWR08
 U 1 1 61D08682
 P 2700 4950
 F 0 "#PWR08" H 2700 4700 50  0001 C CNN
@@ -249,7 +249,7 @@ F 3 "" H 2700 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR04
+L GrasPiB_v1-rescue:+3.3V-power #PWR04
 U 1 1 61D08C39
 P 1900 4750
 F 0 "#PWR04" H 1900 4600 50  0001 C CNN
@@ -260,7 +260,7 @@ F 3 "" H 1900 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C5
+L GrasPiB_v1-rescue:C_Small-Device C5
 U 1 1 61D0A20F
 P 3150 5750
 F 0 "C5" V 3350 5750 50  0000 C CNN
@@ -271,7 +271,7 @@ F 3 "~" H 3150 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C4
+L GrasPiB_v1-rescue:C_Small-Device C4
 U 1 1 61D0A4E4
 P 2900 6050
 F 0 "C4" V 2700 6050 50  0000 C CNN
@@ -329,7 +329,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 6650 1000 6650
 $Comp
-L power:GND #PWR05
+L GrasPiB_v1-rescue:GND-power #PWR05
 U 1 1 61E8E783
 P 1900 7450
 F 0 "#PWR05" H 1900 7200 50  0001 C CNN
@@ -340,7 +340,7 @@ F 3 "" H 1900 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR011
+L GrasPiB_v1-rescue:GND-power #PWR011
 U 1 1 61E8F618
 P 3950 7450
 F 0 "#PWR011" H 3950 7200 50  0001 C CNN
@@ -358,26 +358,18 @@ Wire Wire Line
 	4300 7350 3950 7350
 Wire Wire Line
 	3950 7350 3950 7450
-Wire Wire Line
-	3200 6650 3750 6650
 Text Label 3250 6750 0    50   ~ 0
 RS232_RX
 Text Label 3250 6550 0    50   ~ 0
 RS232_TX
-Text Label 3250 6450 0    50   ~ 0
-RS232_CTS
-Text Label 3250 6650 0    50   ~ 0
-RS232_RTS
 NoConn ~ 4000 6250
 NoConn ~ 4000 6350
 NoConn ~ 4000 6850
 NoConn ~ 4000 6950
 Wire Wire Line
 	1900 7450 1900 7350
-Wire Wire Line
-	3200 6850 3200 6650
 $Comp
-L Interface_UART:MAX3232 U2
+L GrasPiB_v1-rescue:MAX3232-Interface_UART U2
 U 1 1 61898C05
 P 1900 6150
 F 0 "U2" H 1450 7300 50  0000 C CNN
@@ -405,7 +397,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 6250 2700 6250
 $Comp
-L power:GND #PWR010
+L GrasPiB_v1-rescue:GND-power #PWR010
 U 1 1 624848FE
 P 3350 6150
 F 0 "#PWR010" H 3350 5900 50  0001 C CNN
@@ -415,10 +407,6 @@ F 3 "" H 3350 6150 50  0001 C CNN
 	1    3350 6150
 	1    0    0    -1  
 $EndComp
-Text GLabel 1000 6450 0    50   Output ~ 0
-UART_CTS
-Text GLabel 1000 6850 0    50   Input ~ 0
-UART_RTS
 Wire Wire Line
 	1000 6850 1100 6850
 Wire Wire Line
@@ -434,7 +422,7 @@ Wire Notes Line
 Text Notes 600  4600 0    50   ~ 0
 RS232 Interface Driver
 $Comp
-L Device:LED_Small_ALT D2
+L GrasPiB_v1-rescue:LED_Small_ALT-Device D2
 U 1 1 62517670
 P 3950 2200
 F 0 "D2" H 3950 1993 50  0000 C CNN
@@ -445,7 +433,7 @@ F 3 "~" V 3950 2200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R2
+L GrasPiB_v1-rescue:R_Small-Device R2
 U 1 1 6251839D
 P 3650 2200
 F 0 "R2" V 3454 2200 50  0000 C CNN
@@ -456,14 +444,14 @@ F 3 "~" H 3650 2200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP5
+L GrasPiB_v1-rescue:SolderJumper_2_Open-Jumper JP5
 U 1 1 626BE695
-P 2950 6850
-F 0 "JP5" H 2950 6950 50  0000 C CNN
-F 1 "RTS_EN" H 2950 6750 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2950 6850 50  0001 C CNN
-F 3 "~" H 2950 6850 50  0001 C CNN
-	1    2950 6850
+P 2950 6450
+F 0 "JP5" H 2950 6550 50  0000 C CNN
+F 1 "RTS_EN" H 2950 6350 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2950 6450 50  0001 C CNN
+F 3 "~" H 2950 6450 50  0001 C CNN
+	1    2950 6450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -471,14 +459,14 @@ Wire Wire Line
 Wire Wire Line
 	3200 6550 3200 6250
 $Comp
-L Jumper:SolderJumper_2_Open JP4
+L GrasPiB_v1-rescue:SolderJumper_2_Open-Jumper JP4
 U 1 1 626BDC76
-P 2950 6450
-F 0 "JP4" H 2950 6550 50  0000 C CNN
-F 1 "CTS_EN" H 2950 6350 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2950 6450 50  0001 C CNN
-F 3 "~" H 2950 6450 50  0001 C CNN
-	1    2950 6450
+P 2950 6850
+F 0 "JP4" H 2950 6950 50  0000 C CNN
+F 1 "CTS_EN" H 2950 6750 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2950 6850 50  0001 C CNN
+F 3 "~" H 2950 6850 50  0001 C CNN
+	1    2950 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -488,12 +476,10 @@ Wire Wire Line
 Wire Wire Line
 	2700 6850 2800 6850
 Wire Wire Line
-	3100 6850 3200 6850
-Wire Wire Line
 	3350 6150 3350 6050
 Connection ~ 3350 6050
 $Comp
-L Jumper:SolderJumper_2_Open JP1
+L GrasPiB_v1-rescue:SolderJumper_2_Open-Jumper JP1
 U 1 1 629835BB
 P 1150 3050
 F 0 "JP1" V 1200 3100 50  0000 L CNN
@@ -504,7 +490,7 @@ F 3 "~" H 1150 3050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP2
+L GrasPiB_v1-rescue:SolderJumper_2_Open-Jumper JP2
 U 1 1 62984144
 P 3950 3250
 F 0 "JP2" V 3996 3162 50  0000 R CNN
@@ -515,7 +501,7 @@ F 3 "~" H 3950 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Bridged12 JP3
+L GrasPiB_v1-rescue:SolderJumper_3_Bridged12-Jumper JP3
 U 1 1 629850A9
 P 3950 3800
 F 0 "JP3" V 3850 3700 50  0000 R CNN
@@ -573,7 +559,7 @@ Wire Notes Line
 Text Notes 650  1850 0    50   ~ 0
 RPi Connections
 $Comp
-L power:GND #PWR09
+L GrasPiB_v1-rescue:GND-power #PWR09
 U 1 1 62C61A02
 P 4150 2300
 F 0 "#PWR09" H 4150 2050 50  0001 C CNN
@@ -584,7 +570,7 @@ F 3 "" H 4150 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR01
+L GrasPiB_v1-rescue:GND-power #PWR01
 U 1 1 62C048C4
 P 700 2500
 F 0 "#PWR01" H 700 2250 50  0001 C CNN
@@ -597,7 +583,7 @@ $EndComp
 Wire Wire Line
 	700  2500 700  2400
 $Comp
-L Device:R_Small R1
+L GrasPiB_v1-rescue:R_Small-Device R1
 U 1 1 6251939C
 P 1200 2400
 F 0 "R1" V 1004 2400 50  0000 C CNN
@@ -608,7 +594,7 @@ F 3 "~" H 1200 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED_Small_ALT D1
+L GrasPiB_v1-rescue:LED_Small_ALT-Device D1
 U 1 1 62517BCD
 P 900 2400
 F 0 "D1" H 900 2635 50  0000 C CNN
@@ -637,7 +623,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 2200 1500 2100
 $Comp
-L Device:L_Small L1
+L GrasPiB_v1-rescue:L_Small-Device L1
 U 1 1 6100B8BB
 P 3100 1050
 F 0 "L1" V 3200 1200 50  0000 C CNN
@@ -648,7 +634,7 @@ F 3 "~" H 3100 1050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:CP_Small C9
+L GrasPiB_v1-rescue:CP_Small-Device C9
 U 1 1 6100E012
 P 3350 1200
 F 0 "C9" H 3438 1246 50  0000 L CNN
@@ -659,7 +645,7 @@ F 3 "~" H 3350 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:LM2576S-5 U5
+L GrasPiB_v1-rescue:LM2576S-5-Regulator_Switching U5
 U 1 1 6100F626
 P 2250 950
 F 0 "U5" H 2600 1200 50  0000 C CNN
@@ -670,7 +656,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2576.pdf" H 2250 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0101
+L GrasPiB_v1-rescue:GND-power #PWR0101
 U 1 1 6101369E
 P 2250 1400
 F 0 "#PWR0101" H 2250 1150 50  0001 C CNN
@@ -727,7 +713,7 @@ Connection ~ 1100 850
 Wire Wire Line
 	2850 1100 2850 1050
 $Comp
-L Device:D_Schottky_Small_ALT D3
+L GrasPiB_v1-rescue:D_Schottky_Small_ALT-Device D3
 U 1 1 6100D214
 P 2850 1200
 F 0 "D3" V 2850 1250 50  0000 L CNN
@@ -762,7 +748,7 @@ Wire Wire Line
 Wire Wire Line
 	800  2400 700  2400
 $Comp
-L Connector:Screw_Terminal_01x02 J5
+L GrasPiB_v1-rescue:Screw_Terminal_01x02-Connector J5
 U 1 1 61E49C43
 P 700 1150
 F 0 "J5" H 750 950 50  0000 R CNN
@@ -791,7 +777,7 @@ Connection ~ 3350 850
 Wire Notes Line
 	4550 1650 4550 550 
 $Comp
-L power:+5VP #PWR023
+L GrasPiB_v1-rescue:+5VP-power #PWR023
 U 1 1 620E1F7C
 P 3350 800
 F 0 "#PWR023" H 3350 650 50  0001 C CNN
@@ -804,7 +790,7 @@ $EndComp
 Wire Wire Line
 	3350 800  3350 850 
 $Comp
-L power:+5V #PWR0103
+L GrasPiB_v1-rescue:+5V-power #PWR0103
 U 1 1 61478453
 P 4300 800
 F 0 "#PWR0103" H 4300 650 50  0001 C CNN
@@ -817,7 +803,7 @@ $EndComp
 Text Notes 4600 7700 0    50   ~ 0
 RS232 enabling CTS and RTS lines:\nClose Jumpers JP1, JP2, JP4 and JP5 (CTS_EN and RTS_EN)\nOpen jumper  JP3 pos. 1-2 and close pos. 2-3 (DIO3_RT)\n(this rewires GPIB DIO3 line from GPIO16 to GPIO21)
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J6
+L GrasPiB_v1-rescue:Conn_02x05_Odd_Even-Connector_Generic J6
 U 1 1 613B54D8
 P 4000 4950
 F 0 "J6" H 4050 5367 50  0000 C CNN
@@ -840,9 +826,6 @@ Wire Wire Line
 	4350 5300 4350 5050
 Wire Wire Line
 	4350 5050 4300 5050
-Connection ~ 3800 6450
-Wire Wire Line
-	3800 6450 3100 6450
 Wire Wire Line
 	3750 5050 3800 5050
 Connection ~ 3750 6650
@@ -865,7 +848,7 @@ Connection ~ 3700 6550
 Wire Wire Line
 	3700 6550 3200 6550
 $Comp
-L power:GND #PWR024
+L GrasPiB_v1-rescue:GND-power #PWR024
 U 1 1 6166BB7B
 P 3550 5050
 F 0 "#PWR024" H 3550 4800 50  0001 C CNN
@@ -884,7 +867,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 4850 3700 6550
 $Comp
-L Jumper:Jumper_3_Open JP7
+L GrasPiB_v1-rescue:Jumper_3_Open-Jumper JP7
 U 1 1 61F3579E
 P 3700 850
 F 0 "JP7" H 3700 1085 50  0000 C CNN
@@ -895,7 +878,7 @@ F 3 "~" H 3700 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C8
+L GrasPiB_v1-rescue:CP_Small-Device C8
 U 1 1 6100E35A
 P 1100 1200
 F 0 "C8" H 1188 1246 50  0000 L CNN
@@ -906,7 +889,7 @@ F 3 "~" H 1100 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR026
+L GrasPiB_v1-rescue:+12V-power #PWR026
 U 1 1 616C0A01
 P 4050 800
 F 0 "#PWR026" H 4050 650 50  0001 C CNN
@@ -927,7 +910,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 1100 4300 800 
 $Comp
-L power:+12V #PWR025
+L GrasPiB_v1-rescue:+12V-power #PWR025
 U 1 1 61746316
 P 1650 800
 F 0 "#PWR025" H 1650 650 50  0001 C CNN
@@ -945,7 +928,7 @@ Wire Wire Line
 Text Notes 4650 900  0    50   ~ 0
 Power source select jumper JP7:\n1-2 -> Power provided trough onboard regulator circuit (J5 Input range: 7-35V)\n2-3 -> Bypass regulator circuit (Make sure to use apropriate quality 5V external power supply)\nOPEN -> Power is provided trough Raspberry Pi USB power input connector\n
 $Comp
-L Device:R_Small R3
+L GrasPiB_v1-rescue:R_Small-Device R3
 U 1 1 6199846D
 P 8550 5900
 F 0 "R3" H 8609 5946 50  0000 L CNN
@@ -1100,7 +1083,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 5050 6500 5050
 $Comp
-L Device:R_Pack04 RN4
+L GrasPiB_v1-rescue:R_Pack04-Device RN4
 U 1 1 6167414B
 P 7350 5750
 F 0 "RN4" H 7070 5704 50  0000 R CNN
@@ -1111,7 +1094,7 @@ F 3 "~" H 7350 5750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Pack04 RN2
+L GrasPiB_v1-rescue:R_Pack04-Device RN2
 U 1 1 61672DA7
 P 6700 5750
 F 0 "RN2" H 6420 5704 50  0000 R CNN
@@ -1164,7 +1147,7 @@ ATN
 Wire Wire Line
 	5950 5750 5950 5650
 $Comp
-L power:GND #PWR015
+L GrasPiB_v1-rescue:GND-power #PWR015
 U 1 1 60FD710D
 P 5950 5750
 F 0 "#PWR015" H 5950 5500 50  0001 C CNN
@@ -1186,7 +1169,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 4050 5950 4150
 $Comp
-L power:GND #PWR017
+L GrasPiB_v1-rescue:GND-power #PWR017
 U 1 1 60FD57C3
 P 6450 4250
 F 0 "#PWR017" H 6450 4000 50  0001 C CNN
@@ -1197,7 +1180,7 @@ F 3 "" H 6450 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR014
+L GrasPiB_v1-rescue:+5V-power #PWR014
 U 1 1 60FD385B
 P 5950 4050
 F 0 "#PWR014" H 5950 3900 50  0001 C CNN
@@ -1208,7 +1191,7 @@ F 3 "" H 5950 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C7
+L GrasPiB_v1-rescue:C_Small-Device C7
 U 1 1 60FD1D91
 P 6200 4150
 F 0 "C7" V 5971 4150 50  0000 C CNN
@@ -1240,7 +1223,7 @@ Wire Notes Line
 Wire Notes Line
 	9550 6500 10800 6500
 $Comp
-L power:+3.3V #PWR020
+L GrasPiB_v1-rescue:+3.3V-power #PWR020
 U 1 1 618D5778
 P 8800 5750
 F 0 "#PWR020" H 8800 5600 50  0001 C CNN
@@ -1267,7 +1250,7 @@ Wire Wire Line
 Wire Wire Line
 	9800 4350 9700 4350
 $Comp
-L power:+5V #PWR0105
+L GrasPiB_v1-rescue:+5V-power #PWR0105
 U 1 1 615B0AB1
 P 9700 4250
 F 0 "#PWR0105" H 9700 4100 50  0001 C CNN
@@ -1278,7 +1261,7 @@ F 3 "" H 9700 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
+L GrasPiB_v1-rescue:GND-power #PWR0104
 U 1 1 615B0678
 P 9700 4550
 F 0 "#PWR0104" H 9700 4300 50  0001 C CNN
@@ -1289,7 +1272,7 @@ F 3 "" H 9700 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L GrasPiB_v1-rescue:MountingHole-Mechanical H2
 U 1 1 6158C89E
 P 10000 4650
 F 0 "H2" H 10100 4696 50  0000 L CNN
@@ -1300,7 +1283,7 @@ F 3 "~" H 10000 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
+L GrasPiB_v1-rescue:MountingHole-Mechanical H1
 U 1 1 6158C6D6
 P 10000 4150
 F 0 "H1" H 10100 4196 50  0000 L CNN
@@ -1311,7 +1294,7 @@ F 3 "~" H 10000 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J3
+L GrasPiB_v1-rescue:Conn_01x02-Connector_Generic J3
 U 1 1 6158C1C4
 P 10000 4350
 F 0 "J3" H 10080 4342 50  0000 L CNN
@@ -1322,7 +1305,7 @@ F 3 "~" H 10000 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L GrasPiB_v1-rescue:MountingHole-Mechanical H3
 U 1 1 6158B348
 P 10450 4150
 F 0 "H3" H 10550 4196 50  0000 L CNN
@@ -1335,7 +1318,7 @@ $EndComp
 Text Notes 9650 3950 0    50   ~ 0
 Cooling Fan\n
 $Comp
-L power:GND #PWR019
+L GrasPiB_v1-rescue:GND-power #PWR019
 U 1 1 60FD7F34
 P 9200 4750
 F 0 "#PWR019" H 9200 4500 50  0001 C CNN
@@ -1358,7 +1341,7 @@ Connection ~ 9200 4050
 Wire Wire Line
 	9200 4200 9200 4050
 $Comp
-L power:GND #PWR018
+L GrasPiB_v1-rescue:GND-power #PWR018
 U 1 1 60FD7982
 P 8400 4750
 F 0 "#PWR018" H 8400 4500 50  0001 C CNN
@@ -1450,7 +1433,7 @@ Wire Wire Line
 	6400 2750 7450 2750
 Connection ~ 7450 2750
 $Comp
-L Device:R_Pack04 RN1
+L GrasPiB_v1-rescue:R_Pack04-Device RN1
 U 1 1 615D78E9
 P 6700 3050
 F 0 "RN1" H 6420 3004 50  0000 R CNN
@@ -1583,7 +1566,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 2350 6800 2350
 $Comp
-L Device:R_Pack04 RN3
+L GrasPiB_v1-rescue:R_Pack04-Device RN3
 U 1 1 615C1830
 P 7350 3050
 F 0 "RN3" H 7070 3004 50  0000 R CNN
@@ -1703,7 +1686,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 1350 5950 1450
 $Comp
-L power:GND #PWR016
+L GrasPiB_v1-rescue:GND-power #PWR016
 U 1 1 60FD4C33
 P 6450 1550
 F 0 "#PWR016" H 6450 1300 50  0001 C CNN
@@ -1714,7 +1697,7 @@ F 3 "" H 6450 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR013
+L GrasPiB_v1-rescue:GND-power #PWR013
 U 1 1 60FD48DD
 P 5950 3050
 F 0 "#PWR013" H 5950 2800 50  0001 C CNN
@@ -1725,7 +1708,7 @@ F 3 "" H 5950 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR012
+L GrasPiB_v1-rescue:+5V-power #PWR012
 U 1 1 60FD3E4D
 P 5950 1350
 F 0 "#PWR012" H 5950 1200 50  0001 C CNN
@@ -1736,7 +1719,7 @@ F 3 "" H 5950 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C6
+L GrasPiB_v1-rescue:C_Small-Device C6
 U 1 1 60FD2D1C
 P 6200 1450
 F 0 "C6" V 5971 1450 50  0000 C CNN
@@ -1775,7 +1758,7 @@ Wire Notes Line
 Wire Notes Line
 	4600 1050 9450 1050
 $Comp
-L Device:R_Small R4
+L GrasPiB_v1-rescue:R_Small-Device R4
 U 1 1 6199A194
 P 8800 5900
 F 0 "R4" H 8859 5946 50  0000 L CNN
@@ -1786,7 +1769,7 @@ F 3 "~" H 8800 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R5
+L GrasPiB_v1-rescue:R_Small-Device R5
 U 1 1 6199A402
 P 9050 5900
 F 0 "R5" H 9109 5946 50  0000 L CNN
@@ -1803,7 +1786,7 @@ NRFD
 Text GLabel 8450 6100 0    50   BiDi ~ 0
 DAV
 $Comp
-L power:+3.3V #PWR027
+L GrasPiB_v1-rescue:+3.3V-power #PWR027
 U 1 1 6210E924
 P 8550 5750
 F 0 "#PWR027" H 8550 5600 50  0001 C CNN
@@ -1814,7 +1797,7 @@ F 3 "" H 8550 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR028
+L GrasPiB_v1-rescue:+3.3V-power #PWR028
 U 1 1 6210EBE0
 P 9050 5750
 F 0 "#PWR028" H 9050 5600 50  0001 C CNN
@@ -1843,7 +1826,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 5750 8550 5800
 $Comp
-L Connector_Generic:Conn_01x05 J4
+L GrasPiB_v1-rescue:Conn_01x05-Connector_Generic J4
 U 1 1 622D1629
 P 10400 5900
 F 0 "J4" H 10480 5942 50  0000 L CNN
@@ -1854,7 +1837,7 @@ F 3 "~" H 10400 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0102
+L GrasPiB_v1-rescue:+3.3V-power #PWR0102
 U 1 1 62291482
 P 9800 5350
 F 0 "#PWR0102" H 9800 5200 50  0001 C CNN
@@ -1869,7 +1852,7 @@ SCL
 Text GLabel 10000 5800 0    50   BiDi ~ 0
 SDA
 $Comp
-L Jumper:SolderJumper_3_Open JP6
+L GrasPiB_v1-rescue:SolderJumper_3_Open-Jumper JP6
 U 1 1 618D5042
 P 10100 5450
 F 0 "JP6" H 10100 5655 50  0000 C CNN
@@ -1880,7 +1863,7 @@ F 3 "~" H 10100 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR021
+L GrasPiB_v1-rescue:GND-power #PWR021
 U 1 1 618D5401
 P 10100 6200
 F 0 "#PWR021" H 10100 5950 50  0001 C CNN
@@ -1891,7 +1874,7 @@ F 3 "" H 10100 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR022
+L GrasPiB_v1-rescue:+5V-power #PWR022
 U 1 1 618D5AF4
 P 10400 5350
 F 0 "#PWR022" H 10400 5200 50  0001 C CNN
@@ -1934,4 +1917,23 @@ Wire Wire Line
 Connection ~ 1150 2800
 Wire Wire Line
 	1150 2800 1150 2900
+Connection ~ 3800 6450
+Wire Wire Line
+	3800 6450 3800 6850
+Wire Wire Line
+	3800 6850 3100 6850
+Text Label 3250 6650 0    50   ~ 0
+RS232_RTS
+Wire Wire Line
+	3150 6650 3150 6450
+Wire Wire Line
+	3150 6450 3100 6450
+Wire Wire Line
+	3150 6650 3750 6650
+Text GLabel 1000 6450 0    50   Input ~ 0
+UART_RTS
+Text GLabel 1000 6850 0    50   Output ~ 0
+UART_CTS
+Text Label 3250 6850 0    50   ~ 0
+RS232_CTS
 $EndSCHEMATC

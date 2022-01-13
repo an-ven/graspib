@@ -1,312 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_DB9_Male_MountingHoles
-#
-DEF Connector_DB9_Male_MountingHoles J 0 40 Y N 1 F N
-F0 "J" 0 650 50 H V C CNN
-F1 "Connector_DB9_Male_MountingHoles" 0 575 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- DSUB*Male*
-$ENDFPLIST
-DRAW
-C -70 -400 30 0 1 0 F
-C -70 -200 30 0 1 0 F
-C -70 0 30 0 1 0 F
-C -70 200 30 0 1 0 F
-C -70 400 30 0 1 0 F
-C 50 -300 30 0 1 0 F
-C 50 -100 30 0 1 0 F
-C 50 100 30 0 1 0 F
-C 50 300 30 0 1 0 F
-P 2 0 1 0 -150 -400 -100 -400 N
-P 2 0 1 0 -150 -300 20 -300 N
-P 2 0 1 0 -150 -200 -100 -200 N
-P 2 0 1 0 -150 -100 20 -100 N
-P 2 0 1 0 -150 0 -100 0 N
-P 2 0 1 0 -150 100 20 100 N
-P 2 0 1 0 -150 200 -100 200 N
-P 2 0 1 0 -150 300 20 300 N
-P 2 0 1 0 -150 400 -100 400 N
-P 5 0 1 10 -150 -525 -150 525 150 375 150 -375 -150 -525 f
-X PAD 0 0 -600 150 U 50 50 1 1 P
-X 1 1 -300 -400 150 R 50 50 1 1 P
-X 2 2 -300 -200 150 R 50 50 1 1 P
-X 3 3 -300 0 150 R 50 50 1 1 P
-X 4 4 -300 200 150 R 50 50 1 1 P
-X 5 5 -300 400 150 R 50 50 1 1 P
-X 6 6 -300 -300 150 R 50 50 1 1 P
-X 7 7 -300 -100 150 R 50 50 1 1 P
-X 8 8 -300 100 150 R 50 50 1 1 P
-X 9 9 -300 300 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Generic_Conn_01x02
-#
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Generic_Conn_01x05
-#
-DEF Connector_Generic_Conn_01x05 J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Generic_Conn_01x05" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 250 50 -250 1 1 10 f
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 -200 100 150 R 50 50 1 1 P
-X Pin_3 3 -200 0 150 R 50 50 1 1 P
-X Pin_4 4 -200 -100 150 R 50 50 1 1 P
-X Pin_5 5 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Generic_Conn_02x05_Odd_Even
-#
-DEF Connector_Generic_Conn_02x05_Odd_Even J 0 40 Y N 1 F N
-F0 "J" 50 300 50 H V C CNN
-F1 "Connector_Generic_Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_2x??_*
-$ENDFPLIST
-DRAW
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 250 150 -250 1 1 10 f
-S 150 -195 100 -205 1 1 6 N
-S 150 -95 100 -105 1 1 6 N
-S 150 5 100 -5 1 1 6 N
-S 150 105 100 95 1 1 6 N
-S 150 205 100 195 1 1 6 N
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_10 10 300 -200 150 L 50 50 1 1 P
-X Pin_2 2 300 200 150 L 50 50 1 1 P
-X Pin_3 3 -200 100 150 R 50 50 1 1 P
-X Pin_4 4 300 100 150 L 50 50 1 1 P
-X Pin_5 5 -200 0 150 R 50 50 1 1 P
-X Pin_6 6 300 0 150 L 50 50 1 1 P
-X Pin_7 7 -200 -100 150 R 50 50 1 1 P
-X Pin_8 8 300 -100 150 L 50 50 1 1 P
-X Pin_9 9 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Screw_Terminal_01x02
-#
-DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TerminalBlock*:*
-$ENDFPLIST
-DRAW
-C 0 -100 25 1 1 6 N
-C 0 0 25 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-P 2 1 1 6 -21 -87 13 -120 N
-P 2 1 1 6 -21 13 13 -20 N
-P 2 1 1 6 -14 -80 20 -113 N
-P 2 1 1 6 -14 20 20 -13 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_CP_Small
-#
-DEF Device_CP_Small C 0 10 N N 1 F N
-F0 "C" 10 70 50 H V L CNN
-F1 "Device_CP_Small" 10 -80 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- CP_*
-$ENDFPLIST
-DRAW
-S -60 -12 60 -27 0 1 0 F
-S -60 27 60 12 0 1 0 N
-P 2 0 1 0 -50 60 -30 60 N
-P 2 0 1 0 -40 50 -40 70 N
-X ~ 1 0 100 73 D 50 50 1 1 P
-X ~ 2 0 -100 73 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_C_Small
-#
-DEF Device_C_Small C 0 10 N N 1 F N
-F0 "C" 10 70 50 H V L CNN
-F1 "Device_C_Small" 10 -80 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 13 -60 -20 60 -20 N
-P 2 0 1 12 -60 20 60 20 N
-X ~ 1 0 100 80 D 50 50 1 1 P
-X ~ 2 0 -100 80 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_D_Schottky_Small_ALT
-#
-DEF Device_D_Schottky_Small_ALT D 0 10 N N 1 F N
-F0 "D" -50 80 50 H V L CNN
-F1 "Device_D_Schottky_Small_ALT" -280 -80 50 H V L CNN
-F2 "" 0 0 50 V I C CNN
-F3 "" 0 0 50 V I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 -30 0 30 0 N
-P 4 0 1 10 30 -40 -30 0 30 40 30 -40 F
-P 6 0 1 10 -50 30 -50 40 -30 40 -30 -40 -10 -40 -10 -30 N
-X K 1 -100 0 70 R 50 50 1 1 P
-X A 2 100 0 70 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_LED_Small_ALT
-#
-DEF Device_LED_Small_ALT D 0 10 N N 1 F N
-F0 "D" -50 125 50 H V L CNN
-F1 "Device_LED_Small_ALT" -175 -100 50 H V L CNN
-F2 "" 0 0 50 V I C CNN
-F3 "" 0 0 50 V I C CNN
-$FPLIST
- LED*
- LED_SMD:*
- LED_THT:*
-$ENDFPLIST
-DRAW
-P 2 0 1 10 -30 -40 -30 40 N
-P 2 0 1 0 40 0 -30 0 N
-P 4 0 1 10 30 -40 -30 0 30 40 30 -40 F
-P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
-P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
-X K 1 -100 0 70 R 50 50 1 1 P
-X A 2 100 0 70 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_L_Small
-#
-DEF Device_L_Small L 0 10 N N 1 F N
-F0 "L" 30 40 50 H V L CNN
-F1 "Device_L_Small" 30 -40 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
-$ENDFPLIST
-DRAW
-A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
-A 0 -20 20 -899 899 0 1 0 N 0 -40 0 0
-A 0 20 20 -899 899 0 1 0 N 0 0 0 40
-A 0 60 20 -899 899 0 1 0 N 0 40 0 80
-X ~ 1 0 100 20 D 50 50 1 1 P
-X ~ 2 0 -100 20 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_R_Pack04
-#
-DEF Device_R_Pack04 RN 0 0 Y N 1 F N
-F0 "RN" -300 0 50 V V C CNN
-F1 "Device_R_Pack04" 200 0 50 V V C CNN
-F2 "" 275 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- DIP*
- SOIC*
- R*Array*Concave*
- R*Array*Convex*
-$ENDFPLIST
-DRAW
-S -250 -95 150 95 0 1 10 f
-S -225 75 -175 -75 0 1 10 N
-S -125 75 -75 -75 0 1 10 N
-S -25 75 25 -75 0 1 10 N
-S 75 75 125 -75 0 1 10 N
-P 2 0 1 0 -200 -100 -200 -75 N
-P 2 0 1 0 -200 75 -200 100 N
-P 2 0 1 0 -100 -100 -100 -75 N
-P 2 0 1 0 -100 75 -100 100 N
-P 2 0 1 0 0 -100 0 -75 N
-P 2 0 1 0 0 75 0 100 N
-P 2 0 1 0 100 -100 100 -75 N
-P 2 0 1 0 100 75 100 100 N
-X R1.1 1 -200 -200 100 U 50 50 1 1 P
-X R2.1 2 -100 -200 100 U 50 50 1 1 P
-X R3.1 3 0 -200 100 U 50 50 1 1 P
-X R4.1 4 100 -200 100 U 50 50 1 1 P
-X R4.2 5 100 200 100 D 50 50 1 1 P
-X R3.2 6 0 200 100 D 50 50 1 1 P
-X R2.2 7 -100 200 100 D 50 50 1 1 P
-X R1.2 8 -200 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_R_Small
-#
-DEF Device_R_Small R 0 10 N N 1 F N
-F0 "R" 30 20 50 H V L CNN
-F1 "Device_R_Small" 30 -40 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -30 70 30 -70 0 1 8 N
-X ~ 1 0 100 30 D 50 50 1 1 P
-X ~ 2 0 -100 30 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # GPIB_lib_Conn_GPIB
 #
 DEF GPIB_lib_Conn_GPIB J 0 0 Y Y 1 F N
@@ -464,14 +158,359 @@ X SRQ 9 450 0 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Interface_UART_MAX3232
+# GrasPiB_v1-rescue_+12V-power
 #
-DEF Interface_UART_MAX3232 U 0 40 Y Y 1 F N
+DEF GrasPiB_v1-rescue_+12V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "GrasPiB_v1-rescue_+12V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_+3.3V-power
+#
+DEF GrasPiB_v1-rescue_+3.3V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "GrasPiB_v1-rescue_+3.3V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_+5V-power
+#
+DEF GrasPiB_v1-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "GrasPiB_v1-rescue_+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_+5VP-power
+#
+DEF GrasPiB_v1-rescue_+5VP-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "GrasPiB_v1-rescue_+5VP-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5VP 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_CP_Small-Device
+#
+DEF GrasPiB_v1-rescue_CP_Small-Device C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "GrasPiB_v1-rescue_CP_Small-Device" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -60 -12 60 -27 0 1 0 F
+S -60 27 60 12 0 1 0 N
+P 2 0 1 0 -50 60 -30 60 N
+P 2 0 1 0 -40 50 -40 70 N
+X ~ 1 0 100 73 D 50 50 1 1 P
+X ~ 2 0 -100 73 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_C_Small-Device
+#
+DEF GrasPiB_v1-rescue_C_Small-Device C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "GrasPiB_v1-rescue_C_Small-Device" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_Conn_01x02-Connector_Generic
+#
+DEF GrasPiB_v1-rescue_Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "GrasPiB_v1-rescue_Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_Conn_01x05-Connector_Generic
+#
+DEF GrasPiB_v1-rescue_Conn_01x05-Connector_Generic J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "GrasPiB_v1-rescue_Conn_01x05-Connector_Generic" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -250 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_Conn_02x05_Odd_Even-Connector_Generic
+#
+DEF GrasPiB_v1-rescue_Conn_02x05_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
+F0 "J" 50 300 50 H V C CNN
+F1 "GrasPiB_v1-rescue_Conn_02x05_Odd_Even-Connector_Generic" 50 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 150 -250 1 1 10 f
+S 150 -195 100 -205 1 1 6 N
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+S 150 205 100 195 1 1 6 N
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_10 10 300 -200 150 L 50 50 1 1 P
+X Pin_2 2 300 200 150 L 50 50 1 1 P
+X Pin_3 3 -200 100 150 R 50 50 1 1 P
+X Pin_4 4 300 100 150 L 50 50 1 1 P
+X Pin_5 5 -200 0 150 R 50 50 1 1 P
+X Pin_6 6 300 0 150 L 50 50 1 1 P
+X Pin_7 7 -200 -100 150 R 50 50 1 1 P
+X Pin_8 8 300 -100 150 L 50 50 1 1 P
+X Pin_9 9 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_DB9_Male_MountingHoles-Connector
+#
+DEF GrasPiB_v1-rescue_DB9_Male_MountingHoles-Connector J 0 40 Y N 1 F N
+F0 "J" 0 650 50 H V C CNN
+F1 "GrasPiB_v1-rescue_DB9_Male_MountingHoles-Connector" 0 575 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ DSUB*Male*
+$ENDFPLIST
+DRAW
+C -70 -400 30 0 1 0 F
+C -70 -200 30 0 1 0 F
+C -70 0 30 0 1 0 F
+C -70 200 30 0 1 0 F
+C -70 400 30 0 1 0 F
+C 50 -300 30 0 1 0 F
+C 50 -100 30 0 1 0 F
+C 50 100 30 0 1 0 F
+C 50 300 30 0 1 0 F
+P 2 0 1 0 -150 -400 -100 -400 N
+P 2 0 1 0 -150 -300 20 -300 N
+P 2 0 1 0 -150 -200 -100 -200 N
+P 2 0 1 0 -150 -100 20 -100 N
+P 2 0 1 0 -150 0 -100 0 N
+P 2 0 1 0 -150 100 20 100 N
+P 2 0 1 0 -150 200 -100 200 N
+P 2 0 1 0 -150 300 20 300 N
+P 2 0 1 0 -150 400 -100 400 N
+P 5 0 1 10 -150 -525 -150 525 150 375 150 -375 -150 -525 f
+X PAD 0 0 -600 150 U 50 50 1 1 P
+X 1 1 -300 -400 150 R 50 50 1 1 P
+X 2 2 -300 -200 150 R 50 50 1 1 P
+X 3 3 -300 0 150 R 50 50 1 1 P
+X 4 4 -300 200 150 R 50 50 1 1 P
+X 5 5 -300 400 150 R 50 50 1 1 P
+X 6 6 -300 -300 150 R 50 50 1 1 P
+X 7 7 -300 -100 150 R 50 50 1 1 P
+X 8 8 -300 100 150 R 50 50 1 1 P
+X 9 9 -300 300 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_D_Schottky_Small_ALT-Device
+#
+DEF GrasPiB_v1-rescue_D_Schottky_Small_ALT-Device D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "GrasPiB_v1-rescue_D_Schottky_Small_ALT-Device" -280 -80 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 0 30 0 N
+P 4 0 1 10 30 -40 -30 0 30 40 30 -40 F
+P 6 0 1 10 -50 30 -50 40 -30 40 -30 -40 -10 -40 -10 -30 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_GND-power
+#
+DEF GrasPiB_v1-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GrasPiB_v1-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_Jumper_3_Open-Jumper
+#
+DEF GrasPiB_v1-rescue_Jumper_3_Open-Jumper JP 0 0 Y N 1 F N
+F0 "JP" -100 -100 50 H V C CNN
+F1 "GrasPiB_v1-rescue_Jumper_3_Open-Jumper" 0 110 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Jumper*
+ TestPoint*3Pads*
+ TestPoint*Bridge*
+$ENDFPLIST
+DRAW
+A -65 -30 89 1282 518 0 1 0 N -120 40 -10 40
+A 65 -30 89 1282 518 0 1 0 N 10 40 120 40
+C -130 0 20 0 0 0 N
+C 0 0 20 0 0 0 N
+C 130 0 20 0 0 0 N
+P 2 0 1 0 0 -20 0 -50 N
+X A 1 -250 0 100 R 50 50 1 1 P
+X C 2 0 -150 100 U 50 50 1 1 I
+X B 3 250 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_LED_Small_ALT-Device
+#
+DEF GrasPiB_v1-rescue_LED_Small_ALT-Device D 0 10 N N 1 F N
+F0 "D" -50 125 50 H V L CNN
+F1 "GrasPiB_v1-rescue_LED_Small_ALT-Device" -175 -100 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -30 -40 -30 40 N
+P 2 0 1 0 40 0 -30 0 N
+P 4 0 1 10 30 -40 -30 0 30 40 30 -40 F
+P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
+P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_LM2576S-5-Regulator_Switching
+#
+DEF GrasPiB_v1-rescue_LM2576S-5-Regulator_Switching U 0 10 Y Y 1 F N
+F0 "U" -400 250 50 H V L CNN
+F1 "GrasPiB_v1-rescue_LM2576S-5-Regulator_Switching" 0 250 50 H V L CNN
+F2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" 0 -250 50 H I L CIN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO?263*
+$ENDFPLIST
+DRAW
+S -400 200 400 -200 0 1 10 f
+X VIN 1 -500 100 100 R 50 50 1 1 W
+X OUT 2 500 -100 100 L 50 50 1 1 O
+X GND 3 0 -300 100 U 50 50 1 1 W
+X FB 4 500 100 100 L 50 50 1 1 I
+X ~ON~/OFF 5 -500 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_L_Small-Device
+#
+DEF GrasPiB_v1-rescue_L_Small-Device L 0 10 N N 1 F N
+F0 "L" 30 40 50 H V L CNN
+F1 "GrasPiB_v1-rescue_L_Small-Device" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
+A 0 -20 20 -899 899 0 1 0 N 0 -40 0 0
+A 0 20 20 -899 899 0 1 0 N 0 0 0 40
+A 0 60 20 -899 899 0 1 0 N 0 40 0 80
+X ~ 1 0 100 20 D 50 50 1 1 P
+X ~ 2 0 -100 20 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_MAX3232-Interface_UART
+#
+DEF GrasPiB_v1-rescue_MAX3232-Interface_UART U 0 40 Y Y 1 F N
 F0 "U" -100 1125 50 H V R CNN
-F1 "Interface_UART_MAX3232" -100 1050 50 H V R CNN
+F1 "GrasPiB_v1-rescue_MAX3232-Interface_UART" -100 1050 50 H V R CNN
 F2 "" 50 -1050 50 H I L CNN
 F3 "" 0 100 50 H I C CNN
-ALIAS MAX232I MAX202 ADM232A MAX3232 ICL3232
 $FPLIST
  SOIC*P1.27mm*
  DIP*W7.62mm*
@@ -516,36 +555,104 @@ X R2OUT 9 -800 -700 200 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# Jumper_Jumper_3_Open
+# GrasPiB_v1-rescue_MountingHole-Mechanical
 #
-DEF Jumper_Jumper_3_Open JP 0 0 Y N 1 F N
-F0 "JP" -100 -100 50 H V C CNN
-F1 "Jumper_Jumper_3_Open" 0 110 50 H V C CNN
+DEF GrasPiB_v1-rescue_MountingHole-Mechanical H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "GrasPiB_v1-rescue_MountingHole-Mechanical" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Jumper*
- TestPoint*3Pads*
- TestPoint*Bridge*
+ MountingHole*
 $ENDFPLIST
 DRAW
-A -65 -30 89 1282 518 0 1 0 N -120 40 -10 40
-A 65 -30 89 1282 518 0 1 0 N 10 40 120 40
-C -130 0 20 0 0 0 N
-C 0 0 20 0 0 0 N
-C 130 0 20 0 0 0 N
-P 2 0 1 0 0 -20 0 -50 N
-X A 1 -250 0 100 R 50 50 1 1 P
-X C 2 0 -150 100 U 50 50 1 1 I
-X B 3 250 0 100 L 50 50 1 1 P
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# Jumper_SolderJumper_2_Open
+# GrasPiB_v1-rescue_R_Pack04-Device
 #
-DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
+DEF GrasPiB_v1-rescue_R_Pack04-Device RN 0 0 Y N 1 F N
+F0 "RN" -300 0 50 V V C CNN
+F1 "GrasPiB_v1-rescue_R_Pack04-Device" 200 0 50 V V C CNN
+F2 "" 275 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ DIP*
+ SOIC*
+ R*Array*Concave*
+ R*Array*Convex*
+$ENDFPLIST
+DRAW
+S -250 -95 150 95 0 1 10 f
+S -225 75 -175 -75 0 1 10 N
+S -125 75 -75 -75 0 1 10 N
+S -25 75 25 -75 0 1 10 N
+S 75 75 125 -75 0 1 10 N
+P 2 0 1 0 -200 -100 -200 -75 N
+P 2 0 1 0 -200 75 -200 100 N
+P 2 0 1 0 -100 -100 -100 -75 N
+P 2 0 1 0 -100 75 -100 100 N
+P 2 0 1 0 0 -100 0 -75 N
+P 2 0 1 0 0 75 0 100 N
+P 2 0 1 0 100 -100 100 -75 N
+P 2 0 1 0 100 75 100 100 N
+X R1.1 1 -200 -200 100 U 50 50 1 1 P
+X R2.1 2 -100 -200 100 U 50 50 1 1 P
+X R3.1 3 0 -200 100 U 50 50 1 1 P
+X R4.1 4 100 -200 100 U 50 50 1 1 P
+X R4.2 5 100 200 100 D 50 50 1 1 P
+X R3.2 6 0 200 100 D 50 50 1 1 P
+X R2.2 7 -100 200 100 D 50 50 1 1 P
+X R1.2 8 -200 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_R_Small-Device
+#
+DEF GrasPiB_v1-rescue_R_Small-Device R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "GrasPiB_v1-rescue_R_Small-Device" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_Screw_Terminal_01x02-Connector
+#
+DEF GrasPiB_v1-rescue_Screw_Terminal_01x02-Connector J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "GrasPiB_v1-rescue_Screw_Terminal_01x02-Connector" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GrasPiB_v1-rescue_SolderJumper_2_Open-Jumper
+#
+DEF GrasPiB_v1-rescue_SolderJumper_2_Open-Jumper JP 0 0 Y N 1 F N
 F0 "JP" 0 80 50 H V C CNN
-F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
+F1 "GrasPiB_v1-rescue_SolderJumper_2_Open-Jumper" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -563,11 +670,11 @@ X B 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper_SolderJumper_3_Bridged12
+# GrasPiB_v1-rescue_SolderJumper_3_Bridged12-Jumper
 #
-DEF Jumper_SolderJumper_3_Bridged12 JP 0 0 Y N 1 F N
+DEF GrasPiB_v1-rescue_SolderJumper_3_Bridged12-Jumper JP 0 0 Y N 1 F N
 F0 "JP" -100 -100 50 H V C CNN
-F1 "Jumper_SolderJumper_3_Bridged12" 0 110 50 H V C CNN
+F1 "GrasPiB_v1-rescue_SolderJumper_3_Bridged12-Jumper" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -591,11 +698,11 @@ X B 3 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper_SolderJumper_3_Open
+# GrasPiB_v1-rescue_SolderJumper_3_Open-Jumper
 #
-DEF Jumper_SolderJumper_3_Open JP 0 0 Y N 1 F N
+DEF GrasPiB_v1-rescue_SolderJumper_3_Open-Jumper JP 0 0 Y N 1 F N
 F0 "JP" -100 -100 50 H V C CNN
-F1 "Jumper_SolderJumper_3_Open" 0 110 50 H V C CNN
+F1 "GrasPiB_v1-rescue_SolderJumper_3_Open-Jumper" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -615,21 +722,6 @@ P 2 0 1 0 100 0 80 0 N
 X A 1 -200 0 100 R 50 50 1 1 P
 X C 2 0 -150 100 U 50 50 1 1 I
 X B 3 200 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole
-#
-DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
-F0 "H" 0 200 50 H V C CNN
-F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*
-$ENDFPLIST
-DRAW
-C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
@@ -682,101 +774,6 @@ X GND 6 -750 750 200 D 50 50 1 1 P
 X 4/GCLK0 7 -650 -750 200 U 50 50 1 1 B
 X TXD/14 8 -650 750 200 D 50 50 1 1 B
 X GND 9 -550 -750 200 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Regulator_Switching_LM2576S-5
-#
-DEF Regulator_Switching_LM2576S-5 U 0 10 Y Y 1 F N
-F0 "U" -400 250 50 H V L CNN
-F1 "Regulator_Switching_LM2576S-5" 0 250 50 H V L CNN
-F2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" 0 -250 50 H I L CIN
-F3 "" 0 0 50 H I C CNN
-ALIAS LM2576HVS-3.3 LM2576HVS-5 LM2576HVS-15 LM2576HVS-ADJ LM2576S-12 LM2576S-3.3 LM2576S-5 LM2576S-15 LM2576S-ADJ LM2575BU-ADJ LM2575-3.3BU LM2575-5.0BU LM2575-12BU GL2576-3.3TA5R GL2576-5.0TA5R GL2576-12TA5R GL2576-15TA5R GL2576-ATA5R
-$FPLIST
- TO?263*
-$ENDFPLIST
-DRAW
-S -400 200 400 -200 0 1 10 f
-X VIN 1 -500 100 100 R 50 50 1 1 W
-X OUT 2 500 -100 100 L 50 50 1 1 O
-X GND 3 0 -300 100 U 50 50 1 1 W
-X FB 4 500 100 100 L 50 50 1 1 I
-X ~ON~/OFF 5 -500 -100 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# power_+12V
-#
-DEF power_+12V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+12V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +12V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+3.3V
-#
-DEF power_+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+5V
-#
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+5VP
-#
-DEF power_+5VP #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5VP" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5VP 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
