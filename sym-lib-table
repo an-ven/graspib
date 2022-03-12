@@ -1,5 +1,4 @@
 (sym_lib_table
-  (lib (name GPIB_lib)(type Legacy)(uri ${KIPRJMOD}/GPIB_lib.lib)(options "")(descr ""))
-  (lib (name RaspberryPi)(type Legacy)(uri ${KIPRJMOD}/RaspberryPi.lib)(options "")(descr ""))
-  (lib (name GrasPiB_v1-rescue)(type Legacy)(uri ${KIPRJMOD}/GrasPiB_v1-rescue.lib)(options "")(descr ""))
+  (lib (name "GPIB_lib")(type "KiCad")(uri "${KIPRJMOD}/GPIB_lib.kicad_sym")(options "")(descr ""))
+  (lib (name "RaspberryPi")(type "KiCad")(uri "${KIPRJMOD}/RaspberryPi.kicad_sym")(options "")(descr ""))
 )
