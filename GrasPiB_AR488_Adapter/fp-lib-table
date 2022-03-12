@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name ArduinoMirco)(type KiCad)(uri ${KIPRJMOD}/ArduinoMirco.pretty)(options "")(descr ""))
+  (lib (name RaspberryPi)(type KiCad)(uri ${KIPRJMOD}/RaspberryPi.pretty)(options "")(descr ""))
+  (lib (name GrasPiB_AR488_Adapter)(type KiCad)(uri /home/andraz/KiCadProjects/GrasPiB_AR488_Adapter)(options "")(descr ""))
+)
