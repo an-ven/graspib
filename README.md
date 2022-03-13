@@ -77,7 +77,7 @@ Basically just repeat above `make` and `make install` steps when kernel gets upg
 6. Enable non root users to use GPIB interface without sudo
     - Add new `gpib` system group: `$ sudo groupadd -r gpib`
     - Append your_user_name to `gpib` supplementary group: `$ sudo usermod -a -G gpib your_user_name`
-    - Create `/etc/udev/rules.d/99-gpib.rules` file and add line: `SUBSYSTEM=="gpib_common", GROUP="gpib", MODE="0660"`
+    - Create [`/etc/udev/rules.d/99-gpib.rules`](extra/99-gpib.rules) file and add line: `SUBSYSTEM=="gpib_common", GROUP="gpib", MODE="0660"`
     - Reboot system to apply changes (udevadm utility can also be used, but reboot is dead simple to remember)
     - Test by running `ibtest` without sudo
 
@@ -127,7 +127,7 @@ typedef enum {
 
 ```
 
-2. Next the `uart-ctsrts.dtbo` file (included in extra directory) needs to be copied in to the `/boot/overlays` directory and add the following lines need to be added to the `/boot/config.txt` file:
+2. Next the [`uart-ctsrts.dtbo`](extra/uart-ctsrts.dtbo) file (included in extra directory) needs to be copied in to the `/boot/overlays` directory and add the following lines need to be added to the `/boot/config.txt` file:
 
 ```
 enable_uart=1
