@@ -1,0 +1,1 @@
+SUBSYSTEM=="gpib_common", GROUP="gpib", MODE="0660"

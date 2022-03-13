@@ -1,11 +1,11 @@
 # GrasPiB
-GPIB interface board for Raspberry Pi, designed to work with [linux-gpib](https://linux-gpib.sourceforge.io/) gpio bitbang driver. Extra features include: RS232 serial interface, voltage regualtor, fan mount and I2C conector.
+GPIB interface board for Raspberry Pi, designed to work with [linux-gpib](https://linux-gpib.sourceforge.io/) gpio bitbang driver. Extra features include: RS232 serial interface, voltage regulator, fan mount and I2C conector.
 
 ![GrasPiB](Images/IMG_20211229_181813.jpg)
 
 ## Features
 * Active GPIB interface circuit using SN7516x bus driver ICs
-* RS232 serial interface (MAX3232 level converter), with optionaly configurable RTS and CTS lines
+* RS232 serial interface (MAX3232 level converter), with optionally configurable RTS and CTS lines
 * Step down voltage regulator (LM2576) for use with higher voltage power supplies (7-35VDC)
 * 25mm cooling fan mounting holes and 2pin JST-PH connector for power
 * I2C break out connector with one extra GPIO line (5pin JST-PH connector)
@@ -27,14 +27,14 @@ GPIB interface board for Raspberry Pi, designed to work with [linux-gpib](https:
 **Enabling RS232 CTS and RTS lines:**
 
 * Close jumpers JP1, JP2, JP4 and JP5, open JP3 positions 1-2 and close positions 2-3
-* This change also needs the GPIB DIO3 signal to be reasigned from GPIO16 to GPIO21 (linux-gpib driver code modifications needed)
+* This change also needs the GPIB DIO3 signal to be reassigned from GPIO16 to GPIO21 (linux-gpib driver code modifications needed)
 
 ## Linux-gpib setup instructions
 
 (following instructions were tested on a fresh Raspberry Pi OS Lite image)
 
 0. Setup and configure OS on Raspberry Pi
-    * Do as you would with a fresh OS image (passwords, networking, services, comunication ports...)
+    * Do as you would with a fresh OS image (passwords, networking, services, communication ports...)
 
 1. Install build tools and dependencies
     * Build tools: `$ sudo apt install build-essential autoconf automake libtool flex bison`
@@ -54,7 +54,7 @@ GPIB interface board for Raspberry Pi, designed to work with [linux-gpib](https:
     * Now there should be some `gpib*` devices in `/dev`
     * Make the module loads on boot by adding `gpib_bitbang` line to `/etc/modules-load.d/modules.conf`
 
-**When Raspberry Pi OS kernel gets upgraded, linux-gpib kernel module also needs to be rebuilt and reinstaleld.**
+**When Raspberry Pi OS kernel gets upgraded, linux-gpib kernel module also needs to be rebuilt and reinstalled.**
 Basically just repeat above `make` and `make install` steps when kernel gets upgraded...
 
 4. Build and install user space tools
@@ -76,9 +76,63 @@ Basically just repeat above `make` and `make install` steps when kernel gets upg
 
 6. Enable non root users to use GPIB interface without sudo
     - Add new `gpib` system group: `$ sudo groupadd -r gpib`
-    - Append your_user_name to `gpib` suplementary group: `$ sudo usermod -a -G gpib your_user_name`
+    - Append your_user_name to `gpib` supplementary group: `$ sudo usermod -a -G gpib your_user_name`
     - Create `/etc/udev/rules.d/99-gpib.rules` file and add line: `SUBSYSTEM=="gpib_common", GROUP="gpib", MODE="0660"`
     - Reboot system to apply changes (udevadm utility can also be used, but reboot is dead simple to remember)
     - Test by running `ibtest` without sudo
 
 Above instructions should result in an environment with a functional GPIB interface, C headers and python bindings, ready for use.
+
+## Enabling RS232 Hardware flow control
+
+### Hardware setup:
+
+On the Raspberry Pi CTS and RTS signals are mapped to pins GPIO16 and GPIO17. By default, linux-gpib bitbang driver uses GPIO16 for GPIB DIO3 signal. In order to free up GPIO16, the DIO3 signal can be rewired to GPIO21 by **opening** positions **1-2** (cut traces between pads) and **closing** positions **2-3** on the solder jumper JP3.
+
+By default, CTS and RTS signals are disconnected from the RS232 level converter chip. To connect the CTS and RTS lines, solder jumpers **JP1**, **JP2**, **LP4** and **JP5** need to be **closed**.
+
+Note also, that the extra GPIO17 line on the I2C break out connector J4 can't be used for other purposes when system is configured for RS232 hardware flow control.
+
+### Software setup:
+
+1. Because GPIB signal DIO3 was rewired in hardware to GPIO21, this change needs to reflected in the linux-gpib bitbang driver source code. The source file in question is: `[linux-gpib-sorce-dir]/linux-gpib-kernel/drivers/gpib/gpio/gpib_bitbang.c`, where the signal pairing section needs to be modified as shown below. With the modification done, the linux-gpib driver needs to be compiled as described in step 3 of the "Linux-gpib setup instructions" section of this document.
+
+```
+/**********************************************
+ *  Signal pairing and pin wiring between the *
+ *  Raspberry-Pi connector and the GPIB bus   *
+ *                                            *
+ *               signal           pin wiring  *
+ *            GPIB  Pi-gpio     GPIB  ->  RPi *
+**********************************************/
+typedef enum {
+        D01_pin_nr =  20,     /*   1  ->  38  */
+        D02_pin_nr =  26,     /*   2  ->  37  */
+//      D03_pin_nr =  16,     /*   3  ->  36  ORIGINAL AND COMMENTED OUT */
+        D03_pin_nr =  21,     /*   3  ->  40  MODIFIED TO AVOID CONFLICT WITH CTS SIGNAL */
+        D04_pin_nr =  19,     /*   4  ->  35  */
+        D05_pin_nr =  13,     /*  13  ->  33  */
+        D06_pin_nr =  12,     /*  14  ->  32  */
+        D07_pin_nr =   6,     /*  15  ->  31  */
+        D08_pin_nr =   5,     /*  16  ->  29  */
+        EOI_pin_nr =   9,     /*   5  ->  21  */
+        DAV_pin_nr =  10,     /*   6  ->  19  */
+        NRFD_pin_nr = 24,     /*   7  ->  18  */
+        NDAC_pin_nr = 23,     /*   8  ->  16  */
+        IFC_pin_nr =  22,     /*   9  ->  15  */
+        SRQ_pin_nr =  11,     /*  10  ->  23  */
+        _ATN_pin_nr = 25,     /*  11  ->  22  */
+        REN_pin_nr =  27,     /*  17  ->  13  */
+...
+
+```
+
+2. Next the `uart-ctsrts.dtbo` file (included in extra directory) needs to be copied in to the `/boot/overlays` directory and add the following lines need to be added to the `/boot/config.txt` file:
+
+```
+enable_uart=1
+dtoverlay=disable-bt
+dtoverlay=uart-ctsrts
+```
+
+3. Reboot the system to apply changes.
